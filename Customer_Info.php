@@ -22,10 +22,9 @@
     table
     {
         position: absolute;
-        left: 50%;
-        top: 40%;
-        transform: translate(-50%,-50%);
-        border-collapse: collapse;
+        left: 20%;
+        top: 20%;
+       
         width: 800px;
         height: 200px;
         border: 1px solid #bdc3c7;
@@ -76,6 +75,7 @@
     </head>
 <body>
     <h1>CUSTOMER INFORMATION</h1>
+    <a href="index.php" class="GFG"> BACK  </a>
     <table >
     <tr id="header">
              <td><b>Customer ID</b></td>
@@ -84,8 +84,10 @@
              <td><b>View Details</b></td>
         </tr>
     <?php 
+    $cnt=0;
         while($rows=mysqli_fetch_assoc($result))
         {
+            $cnt=$cnt+1;
          ?>  
         
             <tr>
@@ -101,7 +103,19 @@
         }
     ?>    
     </table>
-    <a href="index.php" class="GFG"> BACK  </a>
+    <?php
+    while($cnt!=0)
+    {
+        ?>
+
+        <br><br><br>
+        <?php
+        $cnt=$cnt-1;
+
+    }
+    ?>
+    <br><br><br><br><br><br><br><br><br>
+    
     
 </body>
 </html>
