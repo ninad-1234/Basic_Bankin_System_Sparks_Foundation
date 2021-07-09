@@ -276,7 +276,7 @@ function showSlides() {
         <i class="fa fa-github" style="font-size:36px"></i>
         </td>
         <td>
-        5236014589
+        https://github.com/ninad-1234/Basic_Bankin_System_Sparks_Foundation.git
         </td>
         </tr>
         <tr>
